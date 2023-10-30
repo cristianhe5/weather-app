@@ -2,6 +2,8 @@ import { useEffect, useState } from 'react'
 import './App.css'
 import axios from 'axios'
 import WeatherCard from './components/WeatherCard'
+import {Spinner} from 'reactstrap'
+import'bootstrap/dist/css/bootstrap.min.css'
 
 function App() {
 
@@ -49,13 +51,13 @@ function App() {
   }, [coords])// dependo del coords si llega o no 
 
   
-  
+  console.log(weather);
 
   return (
     <div className='app'>
       
       {
-        isLoading ? <h2 className='app__loader'>Loading...</h2> 
+        isLoading ?  <Spinner color='light' className='app__loader'/>   //<h2 className='app__loader'>Loading...</h2> 
         :(
 
           <WeatherCard      
