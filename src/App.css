@@ -1,0 +1,10 @@
+.app{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-image: url('https://cdn.pixabay.com/photo/2018/08/23/07/35/thunderstorm-3625405_1280.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
