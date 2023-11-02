@@ -44,7 +44,9 @@
 
 }
 .app__btn{
-    display: block;
+    display: flex;
+    justify-content: center;
+    align-content: center;
     border: none;
     border-radius: 0.2em;
     background-color: rgb(255, 247, 0);
