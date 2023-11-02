@@ -1,13 +1,16 @@
 import { useState } from 'react'
 import './styles/WeatherCard.css'
 
+
 const WeatherCard = ({ weather, temp }) => {
 
   const [isCelsius, setIsCelsius] = useState(true)
+
   const handleChangeTemp = () => {
     setIsCelsius(!isCelsius)
 
   }
+
   console.log(weather);
   return (
     <article className='weather'>
@@ -40,7 +43,22 @@ const WeatherCard = ({ weather, temp }) => {
       <button className='weather__btn' onClick={handleChangeTemp}>{isCelsius ? '°F' : '°C'}</button>
 
     </article>
+
   )
 }
 
 export default WeatherCard
+
+
+
+
+
+
+
+
+
+
+
+
+
+

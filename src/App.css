@@ -1,10 +1,63 @@
-.app{
+.loader{
     display: flex;
     justify-content: center;
     align-items: center;
+    min-height: 100vh;
+}
+
+.app{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
     min-height: 100vh;
     background-image: url('https://cdn.pixabay.com/photo/2018/08/23/07/35/thunderstorm-3625405_1280.jpg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+}
+.app__form{
+    margin-bottom:1em;
+    padding: 0;
+    display: flex;
+    justify-content: right;
+    align-items: center; 
+    width: 100%;
+    max-width: 400px;
+    
+    
+      
+
+}
+
+.app__input{
+    border: none;
+    border-radius: 0.3em;
+    padding: 1px 10px;
+    background-color: rgba(255, 255, 255, 0.406);
+    width: 60%;
+      
+
+
+
+}
+.app__btn{
+    border: none;
+    border-radius: 0.2em;
+    background-color: rgb(255, 247, 0);
+    width: 30px;
+    filter: grayscale(0.4);
+    transition: filter 0.33s;
+
+
+}
+.app__btn:hover{
+    filter: grayscale(0);
+    
+    
+    
+}
+.bx-search{
+    color: #9a9a9a;
 }
