@@ -37,12 +37,14 @@
     padding: 1px 10px;
     background-color: rgba(255, 255, 255, 0.406);
     width: 60%;
+    
       
 
 
 
 }
 .app__btn{
+    display: block;
     border: none;
     border-radius: 0.2em;
     background-color: rgb(255, 247, 0);
